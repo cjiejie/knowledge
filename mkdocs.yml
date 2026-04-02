@@ -1,0 +1,64 @@
+site_name: Robot Knowledge
+site_url: https://cjiejie.github.io/robot-knowledge/
+site_author: cjiejie
+site_description: A collection of knowledge about robots.
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - search.highlight
+    - content.code.copy
+
+# theme:
+#   name: readthedocs
+#   highlightjs: true
+#   hljs_languages:
+#     - yaml
+#     - rust
+
+nav:
+  - Home: index.md
+  - Navigation:
+      - Nav2:
+          - Architecture: navigation/nav2/architecture.md
+          - Behavior Tree: navigation/nav2/behavior_tree.md
+          - Costmap: navigation/nav2/costmap.md
+          - Global Planner: navigation/nav2/global_planner.md
+          - Local Planner: navigation/nav2/local_planner.md
+  - Perception:
+      - Linefit Ground: perception/linefit_ground.md
+      - RGBD:
+          - Depth Processing: perception/rgbd/depth.md
+          - Orbbec SDK: perception/rgbd/orbbec_sdk.md
+      - ESDF:
+          - ESDF Integration: perception/esdf/integration.md
+  - Reinforcement:
+      - Study:
+          - Get Start: reinforcement/study/get_start.md
+  - System:
+      - ROS2:
+          - Container: system/ros2/container.md
+          - TF: system/ros2/tf.md
+      - Other:
+          - MkDocs: system/other/mkdocs.md
+  - Note: 
+      note/note.md
+  - About: about.md
+  
+extra:
+  contact:
+    email: cjiejie@outlook.com
+    github: https://github.com/cjiejie
+    blog: https://www.cjiejie.cn
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+plugins:
+  - search
